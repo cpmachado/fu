@@ -20,6 +20,9 @@ func main() {
 		log.Fatalf("invalid port: %d", port)
 	}
 
+	log.Printf("port: %d", port)
+	log.Printf("msg: %q", msg)
+
 	mux := http.NewServeMux()
 
 	mux.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
@@ -54,9 +57,9 @@ func main() {
 		}
 	}
 
-	fmt.Println("Listening in:")
+	log.Println("Listening in:")
 	for _, ip := range ips {
-		fmt.Printf("- http://%s:%d\n", ip, port)
+		log.Printf("- http://%s:%d\n", ip, port)
 	}
 
 	server.ListenAndServe()
