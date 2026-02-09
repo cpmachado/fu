@@ -1,6 +1,6 @@
-# fu
+# fudd
 
-Feel Up (FU) is a simple web server.
+Feel Up Daemon(fudD) is a simple web server.
 
 It enables:
 
@@ -10,7 +10,7 @@ It enables:
 ## Usage
 
 ```sh
-Usage of fu:
+Usage of fud:
   -msg string
     	message to show (default "This is up")
   -port int
@@ -21,7 +21,7 @@ Usage of fu:
 ## Sample
 
 ```sh
-fu
+fud
 ```
 
 Output:
@@ -39,5 +39,5 @@ Output:
 ## Install
 
 ```sh
-go install github.com/cpmachado/fu/cmd/fu@latest
+go install github.com/cpmachado/fud/cmd/fud@latest
 ```

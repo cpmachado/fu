@@ -1,3 +1,3 @@
-module github.com/cpmachado/fu
+module github.com/cpmachado/fud
 
 go 1.25.7
