@@ -34,3 +34,9 @@ Output:
 2026/02/09 16:24:29 - http://XX.XXX.XX.XXX:1337
 2026/02/09 16:24:29 - http://xxxx::xxxx:xxxx:xxxx:xxxx:1337
 ```
+
+## Install
+
+```sh
+go install github.com/cpmachado/fu@latest
+```
