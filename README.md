@@ -15,6 +15,7 @@ Usage of fu:
     	message to show (default "This is up")
   -port int
     	port to serve (default 1337)
+  -v	display version
 ```
 
 ## Sample
