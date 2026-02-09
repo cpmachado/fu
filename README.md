@@ -38,5 +38,5 @@ Output:
 ## Install
 
 ```sh
-go install github.com/cpmachado/fu@latest
+go install github.com/cpmachado/fu/cmd/fu@latest
 ```
