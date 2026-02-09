@@ -26,6 +26,7 @@ func main() {
 	mux := http.NewServeMux()
 
 	mux.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
+		log.Printf("call from ip: %s", r.RemoteAddr)
 		w.Write([]byte(msg))
 	})
 
