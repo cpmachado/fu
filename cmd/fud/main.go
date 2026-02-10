@@ -42,7 +42,9 @@ func main() {
 
 	mux.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		log.Printf("call from ip: %s", r.RemoteAddr)
-		w.Write([]byte(msg))
+		if _, err := w.Write([]byte(msg)); err != nil {
+			log.Fatal(err)
+		}
 	})
 
 	server := &http.Server{
@@ -78,5 +80,7 @@ func main() {
 		log.Printf("- http://%s:%d\n", ip, port)
 	}
 
-	server.ListenAndServe()
+	if err := server.ListenAndServe(); err != nil {
+		log.Fatal(err)
+	}
 }
