@@ -1,6 +1,6 @@
 # fudd
 
-Feel Up Daemon(fudD) is a simple web server.
+Feel Up Daemon(fud) is a simple web server.
 
 It enables:
 
