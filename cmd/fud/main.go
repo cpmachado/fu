@@ -31,7 +31,7 @@ func main() {
 		if ok {
 			version = info.Main.Version
 		}
-		log.Printf("fu-%s", version)
+		log.Printf("fud-%s", version)
 		os.Exit(0)
 	}
 

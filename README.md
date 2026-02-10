@@ -1,4 +1,4 @@
-# fudd
+# fud
 
 Feel Up Daemon(fud) is a simple web server.
 
